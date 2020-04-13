@@ -13,3 +13,14 @@ sum_len = 0
 for d in data:
 	sum_len += len(d)
 print('平均留言長度為', sum_len / len(data)) 
+
+a = []
+b = []
+for line_len2 in data:
+	if int(len(line_len2)) >= 100:
+		a.append(line_len2)
+	else:
+		b.append(line_len2)
+print('-----------------------------------')
+print("超過100字的留言有", len(a), '筆')
+print("小於100字的留言有", len(b), '筆') 
