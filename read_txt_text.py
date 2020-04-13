@@ -8,3 +8,8 @@ with open('reviews.txt', 'r') as f:
 			print(len(data))
 
 print('計算完成,共', len(data), '筆資料') 
+
+sum_len = 0
+for d in data:
+	sum_len += len(d)
+print('平均留言長度為', sum_len / len(data)) 
