@@ -24,3 +24,10 @@ for line_len2 in data:
 print('-----------------------------------')
 print("超過100字的留言有", len(a), '筆')
 print("小於100字的留言有", len(b), '筆') 
+
+good = []
+for g in data:
+	if 'good' in g:
+		good.append(g)
+print('-----------------------------------')
+print('含有Good的留言共有', len(good), '筆')
